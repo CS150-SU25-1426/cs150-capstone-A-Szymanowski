@@ -6,13 +6,19 @@ Sushi Restaurant Menu:
     Inspired by the menu of the sushi restaurant I work at.
 
 Include: 
+Plase 1:
     Header file Sushi.h
     Implementation file Sushi.cpp
     Variables int num, string name, string description, double price, int piece, bool raw, bool spicy
     Two operators: == and <<
+Phase 2 added:
+    Full main file
+    Sushi list header file SushiMenu.h
+    Sushi list implementation file SushiMenu.cpp
 
 Resources:
     Lecture Videos 15b, 16
+    Assignment 23 Overload
     Assignment 24 Inventory
     Menu from Katana Sushi Restaurant
     ChatGPT to fix the constructor errors in Sushi.h

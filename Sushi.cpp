@@ -1,7 +1,9 @@
 #include <iomanip>
 #include "Sushi.h"
 
-Sushi::Sushi(int num, string name, string description, double price, int piece, bool raw, bool spicy){
+Sushi::Sushi(string name, string description, double price, int piece, bool raw, bool spicy){
+    static int lastNum = 0;
+    num = ++ lastNum;
     this->num = num;
     this->name = name;
     this->description = description;
@@ -12,7 +14,7 @@ Sushi::Sushi(int num, string name, string description, double price, int piece, 
 }
 
 bool Sushi::operator==(const Sushi& other) const{
-    return num == other.num && name == other.name && description == other.description 
+    return name == other.name && description == other.description 
         && price == other.price && piece == other.piece && raw == other.raw && spicy == other.spicy;
 }
 

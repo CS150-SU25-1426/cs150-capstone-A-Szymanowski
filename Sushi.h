@@ -16,7 +16,7 @@ class Sushi{
         bool spicy;
 
     public:
-        Sushi(int num, string name, string description, double price, int piece, bool raw, bool spicy);
+        Sushi(string name, string description, double price, int piece, bool raw, bool spicy);
 
         int getNum() const {return num;}
         string getName() const {return name;}
@@ -27,7 +27,7 @@ class Sushi{
         bool getSpicy() const {return spicy;}
 
         void setNum(int num) {this->num = num;}
-        void setname(string name) {this->name = name;}
+        void setName(string name) {this->name = name;}
         void setDescription(string description) {this->description = description;}
         void setPrice(double price) {this->price = price;}
         void setPiece(int piece) {this->piece = piece;}
